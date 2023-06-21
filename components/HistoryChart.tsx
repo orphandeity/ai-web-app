@@ -3,6 +3,7 @@
 import type { Analysis } from '@prisma/client'
 import { ResponsiveContainer, Line, XAxis, Tooltip, LineChart } from 'recharts'
 
+// @ts-ignore
 const CustomTooltip = ({ payload, label, active }) => {
   const dateLabel = new Date(label).toLocaleDateString('en-us', {
     weekday: 'long',
